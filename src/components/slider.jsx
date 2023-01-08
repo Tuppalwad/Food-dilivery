@@ -1,5 +1,8 @@
 import React from "react";
 import img1 from "../Assets/images/slide-3.jpg";
+import img2 from "../Assets/images/slide-2.jpg";
+import img3 from "../Assets/images/slide-1.jpg";
+
 export default function slider() {
   return (
     <>
@@ -32,7 +35,12 @@ export default function slider() {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src={img1} class="d-block w-100" alt="..." />
+            <img
+              src={img1}
+              class="d-block w-100 "
+              style={{ height: "750px" }}
+              alt="..."
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -41,7 +49,12 @@ export default function slider() {
             </div>
           </div>
           <div class="carousel-item">
-            <img src={img1} class="d-block w-100" alt="..." />
+            <img
+              src={img2}
+              class="d-block w-100 "
+              style={{ height: "750px" }}
+              alt="..."
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -50,7 +63,12 @@ export default function slider() {
             </div>
           </div>
           <div class="carousel-item">
-            <img src={img1} class="d-block w-100" alt="..." />
+            <img
+              src={img3}
+              class="d-block w-100 "
+              style={{ height: "750px" }}
+              alt="..."
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
