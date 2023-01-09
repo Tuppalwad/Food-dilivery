@@ -4,28 +4,56 @@ import img2 from "../Assets/images/slide-2.jpg";
 import img3 from "../Assets/images/slide-1.jpg";
 import "../style.css/slider.css";
 import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
+        <div class="container ">
           <Link class="navbar-brand" href="/"></Link>{" "}
-          <div className="logo-2">
-            <Link className="logolink" to="/">
-              UNICO FOODS
-            </Link>
+          <div className="container nav_in_phone_mode ">
+            <div className="logo-2">
+              <Link className="logolink" to="/">
+                UNICO FOODS
+              </Link>
+            </div>
+            <div className="icons">
+              <li class="nav-item">
+                <Link class="nav-link icon_s" to="/Search">
+                  <i class="fa fa-user"></i>
+                </Link>
+              </li>
+              <li class="nav-item" style={{ marginLeft: "-10px" }}>
+                <Link class="nav-link icon_s" to="/Cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </Link>
+              </li>
+
+              <li class="nav-item" style={{ marginLeft: "-15px" }}>
+                <Link class="nav-link" to="/Search">
+                  <i class="fa fa-search"></i>
+                </Link>
+              </li>
+            </div>
+            <div className="menubtn">
+              <button
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                class="navbar-toggler "
+                data-target="#navbarSupportedContent"
+                data-toggle="collapse"
+                type="button"
+                style={{
+                  marginTop: "4px",
+                  marginLeft: "5px",
+                  marginRight: "-5px",
+                }}
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
           </div>
-          <button
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            class="navbar-toggler"
-            data-target="#navbarSupportedContent"
-            data-toggle="collapse"
-            type="button"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="logo">
               <Link className="logolink" to="/">
@@ -65,9 +93,33 @@ export default function Home() {
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to="/Login">
+                  Sign Up
+                </Link>
+              </li>
+
+              <li class="nav-item">
+                <Link class="nav-link" to="/Login">
                   Login
                 </Link>
               </li>
+              <div className="icon_in_lg_mode">
+                <li class="nav-item">
+                  <Link class="nav-link" to="/Search">
+                    <i class="fa fa-user"></i>
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link" to="/Cart">
+                    <i class="fa fa-shopping-cart"></i>
+                  </Link>
+                </li>
+
+                <li class="nav-item">
+                  <Link class="nav-link" to="/Search">
+                    <i class="fa fa-search"></i>
+                  </Link>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -116,19 +168,19 @@ export default function Home() {
           </div>
 
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
+            <div class="carousel-item active" data-bs-interval="2000">
               <img src={img3} class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h1 className="home_title">#WeLoveSnak</h1>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
+            <div class="carousel-item" data-bs-interval="3000">
               <img src={img2} class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h1 className="home_title">#MeakingFoodHelthy</h1>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="4000">
               <img src={img1} class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
                 <h1 className="home_title">#FormToFork</h1>
