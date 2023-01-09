@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../style.css/slider.css";
+import "../style.css/navbar.css";
 export default function Navbar() {
   return (
     <div>
@@ -61,6 +62,24 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="icon_in_lg_mode ">
+            <li class="nav-item">
+              <Link class="nav-link" to="/Search">
+                <i class="fa fa-user"></i>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/Cart">
+                <i class="fa fa-shopping-cart"></i>
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/Search">
+                <i class="fa fa-search"></i>
+              </Link>
+            </li>
           </div>
         </div>
       </nav>

@@ -137,6 +137,9 @@
   .nav_in_phone_mode {
     display: flex;
   }
+  .icon_in_phone {
+    display: none;
+  }
   .menubtn {
     height: 40px;
   }
@@ -146,6 +149,9 @@
     margin-left: -19px;
     padding: 0px;
     margin-right: -10px;
+  }
+  .phone_mode_nav {
+    margin-top: -80px;
   }
   .icons li {
     list-style: none;
@@ -159,7 +165,7 @@
     font-weight: normal;
   }
   .home_title {
-    font-size: 2px;
+    font-size: 40px;
     display: inline;
   }
   .carousel-caption h5 {
@@ -175,6 +181,9 @@
     font-weight: bold;
     cursor: pointer;
   }
+  .demo {
+    font-size: 30px;
+  }
   .logolink {
     text-decoration: none;
     color: #fff;
@@ -183,5 +192,8 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+  }
+  .carousel-caption {
+    bottom: 400px;
   }
 }

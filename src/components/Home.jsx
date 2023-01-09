@@ -54,7 +54,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <div className="logo">
               <Link className="logolink" to="/">
                 UNICO FOODS
@@ -102,7 +102,7 @@ export default function Home() {
                   Login
                 </Link>
               </li>
-              <div className="icon_in_lg_mode">
+              <div className="icon_in_lg_mode icon_in_phone">
                 <li class="nav-item">
                   <Link class="nav-link" to="/Search">
                     <i class="fa fa-user"></i>
@@ -170,19 +170,19 @@ export default function Home() {
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
               <img src={img3} class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h1 className="home_title">#WeLoveSnak</h1>
+              <div class="carousel-caption   d-md-block">
+                <h1 className="home_title">#WeLoveSnack</h1>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
               <img src={img2} class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h1 className="home_title">#MeakingFoodHelthy</h1>
+              <div class="carousel-caption  d-md-block">
+                <h1 className="home_title demo">#MeakingFoodHelthy</h1>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="4000">
               <img src={img1} class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption  d-md-block">
                 <h1 className="home_title">#FormToFork</h1>
               </div>
             </div>
