@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import img1 from "../Assets/images/slide-3.jpg";
 import img2 from "../Assets/images/slide-2.jpg";
 import img3 from "../Assets/images/slide-1.jpg";
-import "../style.css/slider.css";
+import "../style/home.css";
 import { Link } from "react-router-dom";
-
+import Itemslider from "./Items_slider";
+import TopClassItems from "./TopClassItems";
+import CardSlider from "./CardSlider";
 export default function Home() {
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
+
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <nav
+        class={
+          navbar
+            ? "navbar navbar-expand-lg navbar-light bg-dark  fixed-top"
+            : "navbar navbar-expand-lg navbar-light  fixed-top"
+        }
+      >
         <div class="container ">
           <Link class="navbar-brand" href="/"></Link>{" "}
           <div className="container nav_in_phone_mode ">
@@ -46,7 +64,7 @@ export default function Home() {
                 type="button"
                 style={{
                   marginTop: "4px",
-                  marginLeft: "5px",
+                  marginLeft: "11px",
                   marginRight: "-5px",
                 }}
               >
@@ -54,73 +72,67 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse menubar "
+            id="navbarSupportedContent"
+          >
             <div className="logo">
               <Link className="logolink" to="/">
                 UNICO FOODS
               </Link>
             </div>
-            <ul class="navbar-nav ml-auto my_navbar">
-              <li class="nav-item active">
-                <Link class="nav-link" to="/">
-                  Home
+            <div className="my_navbar mx-auto">
+              <ul class="navbar-nav ml-auto ">
+                <li class="nav-item active">
+                  <Link class="nav-link nav_items" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link nav_items" to="/Product">
+                    Product
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link nav_items" to="/Media">
+                    Media
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link nav_items" to="/Profile">
+                    Corporate Profile
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link nav_items" to="/Contact">
+                    Contact
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link nav_items" to="/Blog">
+                    Blog
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="icon_in_lg_mode icon_in_phone">
+              <li class="nav-item ">
+                <Link class="nav-link" to="/Search">
+                  <i class="fa fa-user"></i>
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/Product">
-                  Product
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/Media">
-                  Media
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/Profile">
-                  Corporate Profile
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/Contact">
-                  Contact
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/Blog">
-                  Blog
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/Login">
-                  Sign Up
+                <Link class="nav-link" to="/Cart">
+                  <i class="fa fa-shopping-cart"></i>
                 </Link>
               </li>
 
               <li class="nav-item">
-                <Link class="nav-link" to="/Login">
-                  Login
+                <Link class="nav-link" to="/Search">
+                  <i class="fa fa-search"></i>
                 </Link>
               </li>
-              <div className="icon_in_lg_mode icon_in_phone">
-                <li class="nav-item">
-                  <Link class="nav-link" to="/Search">
-                    <i class="fa fa-user"></i>
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link" to="/Cart">
-                    <i class="fa fa-shopping-cart"></i>
-                  </Link>
-                </li>
-
-                <li class="nav-item">
-                  <Link class="nav-link" to="/Search">
-                    <i class="fa fa-search"></i>
-                  </Link>
-                </li>
-              </div>
-            </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -168,13 +180,13 @@ export default function Home() {
           </div>
 
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
+            <div class="carousel-item active" data-bs-interval="5000">
               <img src={img3} class="d-block w-100" alt="..." />
               <div class="carousel-caption   d-md-block">
                 <h1 className="home_title">#WeLoveSnack</h1>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="5000">
               <img src={img2} class="d-block w-100" alt="..." />
               <div class="carousel-caption  d-md-block">
                 <h1 className="home_title demo">#MeakingFoodHelthy</h1>
@@ -205,6 +217,9 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <CardSlider></CardSlider>
+      <Itemslider></Itemslider>
+      <TopClassItems></TopClassItems>
     </>
   );
 }

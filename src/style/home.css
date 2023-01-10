@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.fa {
+  font-size: 20px;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -83,28 +101,15 @@
   color: #fff;
 }
 
-.my_navbar {
-  margin-top: 100px;
-}
-
 .nav-link :hover {
   color: #ff6b81;
 }
 
-.logo {
-  width: 100%;
-  display: flex;
-  height: 100px;
-  position: absolute;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-left: 500px;
-}
-
 .logolink {
   text-decoration: none;
+  color: #fff;
+}
+.logolink:hover {
   color: #fff;
 }
 .logo-2 {
@@ -121,7 +126,19 @@
 }
 .icon_in_lg_mode {
   display: flex;
-  margin-left: 150px;
+  margin-left: 250px;
+}
+.menubar {
+  margin-top: 10px;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+.my_navbar {
+  margin-left: 110px;
+}
+
+.nav_items :hover {
+  color: #ff6b81;
 }
 @media only screen and (max-width: 767px) {
   .navbar-nav.ml-auto {
@@ -156,6 +173,9 @@
   .icons li {
     list-style: none;
   }
+  .logo {
+    display: none;
+  }
   .fa {
     color: #fff;
     font-size: 20px;
@@ -171,9 +191,7 @@
   .carousel-caption h5 {
     font-size: 30px;
   }
-  .logo {
-    display: none;
-  }
+
   .logo-2 {
     display: flex;
     color: #fff;

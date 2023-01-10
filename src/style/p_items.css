@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.product_img {
+  height: 500px;
+}
+
+.item_slider {
+  height: 400px;
+}
+.test {
+  margin-top: 100px;
+}
+.card_size {
+  width: 20rem;
+}
