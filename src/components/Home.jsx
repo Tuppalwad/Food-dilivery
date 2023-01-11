@@ -6,7 +6,7 @@ import "../style/home.css";
 import { Link } from "react-router-dom";
 import Itemslider from "./Items_slider";
 import TopClassItems from "./TopClassItems";
-import CardSlider from "./CardSlider";
+import CardSlider from "./Card_Slider";
 import Footer from "./Footer";
 import Newsitem from "./Newsitem";
 export default function Home() {
@@ -219,7 +219,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      {/* <CardSlider></CardSlider> */}
+      <CardSlider></CardSlider>
       <Itemslider></Itemslider>
       <TopClassItems></TopClassItems>
       <Newsitem></Newsitem>

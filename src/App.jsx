@@ -8,6 +8,7 @@ import Product from "./components/Product";
 import Blog from "./components/Blog";
 import Login from "./components/Autho/login";
 import CardDetails from "./components/CardDetails";
+
 function App() {
   return (
     <>
