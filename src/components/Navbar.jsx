@@ -4,8 +4,8 @@ import "../style/navbar.css";
 export default function Navbar() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark  ">
-        <div class="container In_lg_mode ">
+      <nav class="navbar mx-auto navbar-expand-lg navbar-light bg-dark fixed-top  ">
+        <div class="container-fluid mx-auto In_lg_mode ">
           <Link class="navbar-brand" href="/"></Link>{" "}
           <div className="container nav_in_phone_mode ">
             <div className="logo-2">
@@ -59,8 +59,8 @@ export default function Navbar() {
                 UNICO FOODS
               </Link>
             </div>
-            <div className="my_navbar mx-auto">
-              <ul class="navbar-nav ml-auto ">
+            <div className="my_navbar ">
+              <ul class="navbar-nav  my-3 ml-auto ">
                 <li class="nav-item active">
                   <Link class="nav-link nav_items" to="/">
                     Home

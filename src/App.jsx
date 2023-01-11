@@ -7,6 +7,7 @@ import Media from "./components/Media";
 import Product from "./components/Product";
 import Blog from "./components/Blog";
 import Login from "./components/Autho/login";
+import CardDetails from "./components/CardDetails";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <div className="App"></div>
       <Router>
         <Routes>
+          <Route path="/CardDetails" element={<CardDetails />} />
           <Route path="/" element={<Home />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/Contact" element={<Contact />} />

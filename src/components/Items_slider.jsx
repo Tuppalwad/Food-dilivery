@@ -7,13 +7,11 @@ export default function Itemslider() {
   return (
     <>
       {/* heding 1 for product  */}
-      <div className="test">
-        <div class="container my-3">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="heading mx-auto text-center my-3">
-                <h2>Our Products</h2>
-              </div>
+      <div class="container my-3" style={{ marginTop: "70px" }}>
+        <div class="row">
+          <div class="col-md-12 my-3">
+            <div class="heading mx-auto text-center my-3">
+              <h2>Our Products</h2>
             </div>
           </div>
         </div>

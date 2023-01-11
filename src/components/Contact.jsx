@@ -10,3 +10,6 @@ export default function Contact() {
     </>
   );
 }
+// reusing component in react
+// once a part is loaded don't load it twice in react
+// do not waste loaded data after leaving page in react

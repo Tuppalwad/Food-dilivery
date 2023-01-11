@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 import Itemslider from "./Items_slider";
 import TopClassItems from "./TopClassItems";
 import CardSlider from "./CardSlider";
+import Footer from "./Footer";
+import Newsitem from "./Newsitem";
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
@@ -27,7 +29,7 @@ export default function Home() {
             : "navbar navbar-expand-lg navbar-light  fixed-top"
         }
       >
-        <div class="container ">
+        <div class="container-fluid navbar_top  ">
           <Link class="navbar-brand" href="/"></Link>{" "}
           <div className="container nav_in_phone_mode ">
             <div className="logo-2">
@@ -217,9 +219,11 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <CardSlider></CardSlider>
+      {/* <CardSlider></CardSlider> */}
       <Itemslider></Itemslider>
       <TopClassItems></TopClassItems>
+      <Newsitem></Newsitem>
+      <Footer />
     </>
   );
 }

@@ -30,13 +30,7 @@ a {
   margin-top: 25px;
   font-family: merienda;
 }
-.carousel-caption p {
-  width: 60%;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.9;
-  font-family: poppins;
-}
+
 .carousel-caption a {
   text-transform: uppercase;
   background: #262626;
@@ -126,7 +120,7 @@ a {
 }
 .icon_in_lg_mode {
   display: flex;
-  margin-left: 250px;
+  /* margin-left: 250px; */
 }
 .menubar {
   margin-top: 10px;
@@ -140,6 +134,12 @@ a {
 .nav_items :hover {
   color: #ff6b81;
 }
+
+.navbar_top {
+  margin-top: 30px;
+  padding-bottom: 23px;
+}
+
 @media only screen and (max-width: 767px) {
   .navbar-nav.ml-auto {
     background: rgba(0, 0, 0, 0.5);
@@ -191,7 +191,10 @@ a {
   .carousel-caption h5 {
     font-size: 30px;
   }
-
+  .menubar {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
   .logo-2 {
     display: flex;
     color: #fff;

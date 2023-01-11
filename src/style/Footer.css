@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icons_fooder:hover {
+  font-size: 20px;
+  color: black;
+}
+
+.footer_email {
+  margin-bottom: 6px;
+  width: 200px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 780px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_email {
+    margin-bottom: 10px;
+  }
+  .footer_data {
+    width: 450px;
+  }
+}
