@@ -127,9 +127,9 @@ a {
   margin-left: 20px;
   justify-content: space-between;
 }
-.my_navbar {
+/* .my_navbar {
   margin-left: 110px;
-}
+} */
 
 .nav_items :hover {
   color: #ff6b81;

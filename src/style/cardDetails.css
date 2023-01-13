@@ -88,7 +88,7 @@ a {
   margin-top: -5px;
   border-radius: 30px;
   text-transform: uppercase;
-  transition: background 0.5s;
+  transition: background 0.3s;
 }
 .my_btn:hover {
   background: #563434;
@@ -103,8 +103,8 @@ a {
   height: 400px;
 }
 .small-img {
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
 }
 
 #productimg {

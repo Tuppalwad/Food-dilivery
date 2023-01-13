@@ -88,7 +88,7 @@ const Card_Slider = () => {
   ];
   return (
     <>
-      <div className="container mx-auto  my-3">
+      <div className="container mx-auto  my-4">
         <h1 className="text-center text-3xl font-bold text-gray-800 mt-20">
           Card Slider
         </h1>
