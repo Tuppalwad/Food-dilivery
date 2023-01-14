@@ -6,7 +6,7 @@ import "../style/home.css";
 import { Link } from "react-router-dom";
 import Itemslider from "./Items_slider";
 import TopClassItems from "./TopClassItems";
-import CardSlider from "./Card_Slider";
+import CardSlider from "./Slider";
 import Footer from "./Footer";
 import Newsitem from "./Newsitem";
 export default function Home() {
@@ -64,11 +64,6 @@ export default function Home() {
                 data-target="#navbarSupportedContent"
                 data-toggle="collapse"
                 type="button"
-                style={{
-                  marginTop: "4px",
-                  marginLeft: "11px",
-                  marginRight: "-5px",
-                }}
               >
                 <span class="navbar-toggler-icon"></span>
               </button>

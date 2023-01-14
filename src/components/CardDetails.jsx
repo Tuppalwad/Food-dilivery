@@ -11,18 +11,65 @@ export default function CardDetails() {
     document.getElementById("productimg").src = e.target.src;
   };
 
+  const add = () => {
+    let value = document.querySelector("input").value;
+    value++;
+    document.querySelector("input").value = value;
+  };
+  const subtract = () => {
+    let value = document.querySelector("input").value;
+    if (value <= 0) {
+      return;
+    }
+    value--;
+    document.querySelector("input").value = value;
+  };
+
   return (
     <>
       <Navbar />
-      <div className="small-container single-product ">
+      <div className="container single-product ">
         <div className="row details">
-          <div className="col-8">
+          <div className="col-6 ">
             <img
               src={Img1}
-              style={{ padding: "10px", marginLeft: "4px", width: "100%" }}
+              className="col-6 "
+              // style={{ padding: "10px", marginLeft: "4px", width: "100%" }}
               alt=""
               id="productimg"
             />
+          </div>
+          <div className="col-6 product-details">
+            <h2>product details</h2>
+            <p>
+              <strike>MRP ₹ 330.00</strike>{" "}
+              <span>
+                <b>-15%</b>
+              </span>
+            </p>
+            <h4>MRP ₹ 330.00</h4>
+            <p>(incl. of all taxes) </p>
+            {/* write a code for quantity  */}
+
+            <div className="quantity">
+              <span>Quantity</span>
+              <div className="quantity-btn">
+                <span className="minus-btn">
+                  <i className="fa fa-minus" onClick={subtract}></i>
+                </span>
+                <input type="text" value="1" />
+                <span className="plus-btn">
+                  <i className="fa fa-plus" onClick={add}></i>
+                </span>
+              </div>
+            </div>
+            <br />
+
+            <Link href="" className="btn my_btn">
+              Add to Cart
+            </Link>
+            <br />
+            <p className="title_for_items">Frequently Bought Bundle</p>
             <div className="small-img-row ">
               <div className="small-img-col ">
                 <img
@@ -49,26 +96,16 @@ export default function CardDetails() {
                 />
               </div>
             </div>
-          </div>
-          <div className="col-2">
-            <h2>product details</h2>
-            <p>discription</p>
-            <h4>$50.00</h4>
-
-            <input type="number" value="1" />
-            <Link href="" className="btn my_btn">
-              Add to Cart
-            </Link>
             <h3>
               Product Details <i className="fa fa-indent"></i>
             </h3>
-            <br />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               quod, voluptatum, quia, voluptas quas voluptates quibusdam
               voluptatibus quae quidem quos nesciunt. Quisquam, quae. Quisquam
               quod, voluptatum, quia, voluptas quas voluptates quibusdam
             </p>
+            {/* <div className="container my-3"></div> */}
           </div>
         </div>
         <div className="small-container">

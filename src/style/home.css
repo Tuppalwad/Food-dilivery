@@ -123,13 +123,12 @@ a {
   /* margin-left: 250px; */
 }
 .menubar {
-  margin-top: 10px;
-  margin-left: 20px;
-  justify-content: space-between;
+  /* margin-top: 10px;
+  margin-left: 20px; */
+  /* justify-content: space-between; */
+  /* margin-right: 21px;
+   */
 }
-/* .my_navbar {
-  margin-left: 110px;
-} */
 
 .nav_items :hover {
   color: #ff6b81;
@@ -153,6 +152,7 @@ a {
   }
   .nav_in_phone_mode {
     display: flex;
+    margin-left: -10px;
   }
   .icon_in_phone {
     display: none;

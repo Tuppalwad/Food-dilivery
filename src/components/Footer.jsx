@@ -12,7 +12,7 @@ const Footer = () => {
           <div class="container p-4 pb-0">
             <section class="container">
               <div class="row">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ">
                   <h6 class="text-uppercase mb-4 font-weight-bold">
                     <Link to="/">UNICO FOODS</Link>
                   </h6>
@@ -25,7 +25,7 @@ const Footer = () => {
 
                 <hr class="w-100 clearfix d-md-none" />
 
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-5">
                   <h6 class="text-uppercase mb-4 font-weight-bold">Link</h6>
 
                   <p>
@@ -53,7 +53,7 @@ const Footer = () => {
                       Media
                     </Link>
                   </p>
-                  <p>
+                  {/* <p>
                     <Link class="text-white" to="/Profile">
                       Profile
                     </Link>
@@ -62,12 +62,12 @@ const Footer = () => {
                     <Link class="text-white" to="/Contact">
                       Contact
                     </Link>
-                  </p>
+                  </p> */}
                 </div>
 
                 <hr class="w-100 clearfix d-md-none" />
 
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
                   <h6 class="text-uppercase mb-4 font-weight-bold">
                     Useful links
                   </h6>
@@ -87,7 +87,7 @@ const Footer = () => {
 
                 <hr class="w-100 clearfix d-md-none" />
 
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-5">
                   <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
 
                   <div class="input-group mb-3">
@@ -128,7 +128,7 @@ const Footer = () => {
               <div class="row d-flex align-items-center">
                 <div class="col-md-7 col-lg-8 text-center text-md-start">
                   <div class="p-3">
-                    © 2020 Copyright:
+                    © 2020 :
                     <Link class="text-white" href="https://mdbootstrap.com/">
                       MDBootstrap.com
                     </Link>

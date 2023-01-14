@@ -5,7 +5,7 @@ import React from "react";
 // import img4 from "../Assets/images/card_slider4.jpg";
 // import img5 from "../Assets/images/card_slider5.jpg";
 // import img6 from "../Assets/images/card_slider6.jpg";
-import "../style/Card_Slider.css";
+import "../style/slider.css";
 const Card = (props) => (
   <div className="card_slider">
     <img className="img_slider" src={props.imgUrl} alt={props.alt || "Image"} />
@@ -88,7 +88,7 @@ const Card_Slider = () => {
   ];
   return (
     <>
-      <div className="container mx-auto  my-4">
+      <div className="container mx-auto  my-3">
         <h1 className="text-center text-3xl font-bold text-gray-800 mt-20">
           Card Slider
         </h1>
