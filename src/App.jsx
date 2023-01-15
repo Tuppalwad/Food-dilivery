@@ -8,7 +8,12 @@ import Product from "./components/Product";
 import Blog from "./components/Blog";
 import Login from "./components/Autho/login";
 import CardDetails from "./components/CardDetails";
-
+import About from "./components/About";
+import ProductItems from "./components/ProductItems";
+import Millits from "./components/Millits";
+import Flakes from "./components/Flakes";
+import Muesli from "./components/Muesli";
+import Cookies from "./components/Cookies";
 function App() {
   return (
     <>
@@ -24,6 +29,12 @@ function App() {
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Profile" element={<Profile />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/ProductItems" element={<ProductItems />} />
+          <Route path="/Millet" element={<Millits />} />
+          <Route path="/Flakes" element={<Flakes />} />
+          <Route path="/Muesli" element={<Muesli />} />
+          <Route path="/Cookies" element={<Cookies />} />
         </Routes>
       </Router>
     </>

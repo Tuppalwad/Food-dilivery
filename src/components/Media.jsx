@@ -4,7 +4,7 @@ export default function Media() {
   return (
     <>
       <div>
-        <Navbar />
+        <Navbar bg={false} />
       </div>
       <div>
         <h1>Media</h1>

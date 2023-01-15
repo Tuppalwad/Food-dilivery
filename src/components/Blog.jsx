@@ -4,7 +4,7 @@ export default function Blog() {
   return (
     <>
       <div>
-        <Navbar />
+        <Navbar bg={true} />
       </div>
       <div>Blog</div>
     </>

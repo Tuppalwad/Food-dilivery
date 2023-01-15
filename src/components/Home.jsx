@@ -9,20 +9,21 @@ import TopClassItems from "./TopClassItems";
 import CardSlider from "./Slider";
 import Footer from "./Footer";
 import Newsitem from "./Newsitem";
+import Navbar from "./Navbar";
 export default function Home() {
-  const [navbar, setNavbar] = useState(false);
-  const changeBackground = () => {
-    if (window.scrollY >= 80) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-  window.addEventListener("scroll", changeBackground);
+  // const [navbar, setNavbar] = useState(false);
+  // const changeBackground = () => {
+  //   if (window.scrollY >= 80) {
+  //     setNavbar(true);
+  //   } else {
+  //     setNavbar(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", changeBackground);
 
   return (
     <>
-      <nav
+      {/* <nav
         class={
           navbar
             ? "navbar navbar-expand-lg navbar-light bg-dark  fixed-top"
@@ -132,8 +133,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </nav>
-
+      </nav> */}
+      <Navbar bg={true} />
       <div
         class="carousel slide"
         data-ride="carousel"

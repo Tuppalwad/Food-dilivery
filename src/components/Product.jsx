@@ -4,7 +4,7 @@ export default function Product() {
   return (
     <>
       <div>
-        <Navbar />
+        <Navbar bg={false} />
       </div>
       <div>Product</div>;
     </>

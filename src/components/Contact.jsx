@@ -6,7 +6,7 @@ export default function Contact() {
       <div>
         <Navbar />
       </div>
-      <div>Contact</div>;
+      <div>Contact</div>
     </>
   );
 }

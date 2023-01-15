@@ -6,6 +6,7 @@ import Img3 from "../Assets/images/slide-3.jpg";
 
 import "../style/cardDetails.css";
 import Navbar from "./Navbar";
+
 export default function CardDetails() {
   const changeImage = (e) => {
     document.getElementById("productimg").src = e.target.src;
@@ -27,7 +28,7 @@ export default function CardDetails() {
 
   return (
     <>
-      <Navbar />
+      <Navbar bg1={true} bg2={true} />
       <div className="container single-product ">
         <div className="row details">
           <div className="col-6 ">
