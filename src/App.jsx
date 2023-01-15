@@ -14,12 +14,14 @@ import Millits from "./components/Millits";
 import Flakes from "./components/Flakes";
 import Muesli from "./components/Muesli";
 import Cookies from "./components/Cookies";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <>
       {" "}
       <div className="App"></div>
       <Router>
+        <ScrollToTop></ScrollToTop>
         <Routes>
           <Route path="/CardDetails" element={<CardDetails />} />
           <Route path="/" element={<Home />} />

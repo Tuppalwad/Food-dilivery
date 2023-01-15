@@ -2,7 +2,12 @@ import React from "react";
 import Navbar from "./Navbar";
 import "../style/ProductItems.css";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 export default function ProductItems(props) {
+  const fillstar = (e) => {
+    e.target.style.color = "yellow";
+  };
+
   return (
     <>
       <Navbar></Navbar>
@@ -10,15 +15,33 @@ export default function ProductItems(props) {
         <div className="row">
           <div className="col-md-4 tcards ">
             <div className="card border-0 my-3">
-              <img src={props.Bg} className="card-img-top" alt="..." />
+              <Link to="/CardDetails">
+                <img src={props.Bg} className="card-img-top" alt="..." />
+              </Link>
               <div className="card-body g_body text-center">
                 <p>product info</p>
                 <div className="container my-2">
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
+                  <i className="far fa-star" style={{ color: "black" }}></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
                 </div>
                 <h5>
                   <strike>MRP ₹ 23</strike> <span>-15%</span>
@@ -31,15 +54,37 @@ export default function ProductItems(props) {
           </div>
           <div className="col-md-4 tcards ">
             <div className="card border-0 my-3">
-              <img src={props.Bg} className="card-img-top" alt="..." />
+              <Link to="/CardDetails">
+                <img src={props.Bg} className="card-img-top" alt="..." />
+              </Link>
               <div className="card-body g_body text-center">
                 <p>product info</p>
                 <div className="container my-2">
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
                 </div>
                 <h5>
                   <strike>MRP ₹ 23</strike> <span>-15%</span>
@@ -52,15 +97,37 @@ export default function ProductItems(props) {
           </div>
           <div className="col-md-4 tcards ">
             <div className="card border-0 my-3">
-              <img src={props.Bg} className="card-img-top" alt="..." />
+              <Link to="/CardDetails">
+                <img src={props.Bg} className="card-img-top" alt="..." />
+              </Link>
               <div className="card-body g_body text-center">
                 <p>product info</p>
                 <div className="container my-2">
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
                 </div>
                 <h5>
                   <strike>MRP ₹ 23</strike> <span>-15%</span>
@@ -73,15 +140,37 @@ export default function ProductItems(props) {
           </div>
           <div className="col-md-4 tcards ">
             <div className="card border-0 my-3">
-              <img src={props.Bg} className="card-img-top" alt="..." />
+              <Link to="/CardDetails">
+                <img src={props.Bg} className="card-img-top" alt="..." />
+              </Link>
               <div className="card-body g_body text-center">
                 <p>product info</p>
                 <div className="container my-2">
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
                 </div>
                 <h5>
                   <strike>MRP ₹ 23</strike> <span>-15%</span>
@@ -94,15 +183,37 @@ export default function ProductItems(props) {
           </div>
           <div className="col-md-4 tcards ">
             <div className="card border-0 my-3">
-              <img src={props.Bg} className="card-img-top" alt="..." />
+              <Link to="/CardDetails">
+                <img src={props.Bg} className="card-img-top" alt="..." />
+              </Link>
               <div className="card-body g_body text-center">
                 <p>product info</p>
                 <div className="container my-2">
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
                 </div>
                 <h5>
                   <strike>MRP ₹ 23</strike> <span>-15%</span>
@@ -115,15 +226,37 @@ export default function ProductItems(props) {
           </div>
           <div className="col-md-4 tcards ">
             <div className="card border-0 my-3">
-              <img src={props.Bg} className="card-img-top" alt="..." />
+              <Link to="/CardDetails">
+                <img src={props.Bg} className="card-img-top" alt="..." />
+              </Link>
               <div className="card-body g_body text-center">
                 <p>product info</p>
                 <div className="container my-2">
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
                 </div>
                 <h5>
                   <strike>MRP ₹ 23</strike> <span>-15%</span>
@@ -136,15 +269,37 @@ export default function ProductItems(props) {
           </div>
           <div className="col-md-4 tcards ">
             <div className="card border-0 my-3">
-              <img src={props.Bg} className="card-img-top" alt="..." />
+              <Link to="/CardDetails">
+                <img src={props.Bg} className="card-img-top" alt="..." />
+              </Link>
               <div className="card-body g_body text-center">
                 <p>product info</p>
                 <div className="container my-2">
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
                 </div>
                 <h5>
                   <strike>MRP ₹ 23</strike> <span>-15%</span>
@@ -157,15 +312,37 @@ export default function ProductItems(props) {
           </div>
           <div className="col-md-4 tcards ">
             <div className="card border-0 my-3">
-              <img src={props.Bg} className="card-img-top" alt="..." />
+              <Link to="/CardDetails">
+                <img src={props.Bg} className="card-img-top" alt="..." />
+              </Link>
               <div className="card-body g_body text-center">
                 <p>product info</p>
                 <div className="container my-2">
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
                 </div>
                 <h5>
                   <strike>MRP ₹ 23</strike> <span>-15%</span>
@@ -178,15 +355,37 @@ export default function ProductItems(props) {
           </div>
           <div className="col-md-4 tcards ">
             <div className="card border-0 my-3">
-              <img src={props.Bg} className="card-img-top" alt="..." />
+              <Link to="/CardDetails">
+                <img src={props.Bg} className="card-img-top" alt="..." />
+              </Link>
               <div className="card-body g_body text-center">
                 <p>product info</p>
                 <div className="container my-2">
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
-                  <i className="fa fa-star-o" style={{ color: "black" }}></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
+                  <i
+                    className="far fa-star"
+                    onclick={fillstar}
+                    style={{ color: "black", cursor: "pointer" }}
+                  ></i>
                 </div>
                 <h5>
                   <strike>MRP ₹ 23</strike> <span>-15%</span>

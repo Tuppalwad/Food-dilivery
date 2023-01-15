@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import img1 from "../Assets/images/card_slide1.jpg";
 // import img2 from "../Assets/images/card_slider2.jpg";
 // import img3 from "../Assets/images/card_slider3.jpg";
@@ -8,7 +9,13 @@ import React from "react";
 import "../style/slider.css";
 const Card = (props) => (
   <div className="card_slider">
-    <img className="img_slider" src={props.imgUrl} alt={props.alt || "Image"} />
+    <Link to="/CardDetails">
+      <img
+        className="img_slider"
+        src={props.imgUrl}
+        alt={props.alt || "Image"}
+      />
+    </Link>
     <div className="card-content">
       <h2>{props.title}</h2>
       <p>{props.content}</p>

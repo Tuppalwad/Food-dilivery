@@ -5,6 +5,7 @@ import Img2 from "../Assets/images/slide-2.jpg";
 import Img3 from "../Assets/images/slide-3.jpg";
 
 import "../style/cardDetails.css";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 export default function CardDetails() {
@@ -106,7 +107,6 @@ export default function CardDetails() {
               voluptatibus quae quidem quos nesciunt. Quisquam, quae. Quisquam
               quod, voluptatum, quia, voluptas quas voluptates quibusdam
             </p>
-            {/* <div className="container my-3"></div> */}
           </div>
         </div>
         <div className="small-container">
@@ -116,6 +116,7 @@ export default function CardDetails() {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }
