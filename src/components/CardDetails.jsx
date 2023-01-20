@@ -61,7 +61,8 @@ export default function CardDetails() {
                 </span>
                 <input type="text" value="1" />
                 <span className="plus-btn">
-                  <i className="fa fa-plus" onClick={add}></i>
+                  <i class="fa fa-plus" aria-hidden="true" onClick={add}></i>
+                  {/* <i className="fa fa-plus"></i> */}
                 </span>
               </div>
             </div>

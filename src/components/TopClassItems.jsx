@@ -7,7 +7,7 @@ export default function TopClassItems() {
   return (
     <>
       <div className="test">
-        <div class="container my-4">
+        <div class="container my-3">
           <div class="row">
             <div class="col-md-12 my-3">
               <div class="heading mx-auto text-center my-3 ">
@@ -17,96 +17,85 @@ export default function TopClassItems() {
           </div>
         </div>
 
-        <div class="container-fluid ">
-          <div className="container-fluid mx-3">
-            <div class="row mx-auto">
-              <div class="col-md-3 my-2">
-                <div class="card  card_size ">
-                  <Link to="/CardDetails">
-                    <img src={img} class="card-img-top" alt="..." />
+        <div class="container ">
+          <div class="row mx-auto">
+            <div class="col-md-3 ">
+              <div class="card mx-auto my-3" style={{ width: "18rem" }}>
+                <img src={img} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title
+                  "
+                  >
+                    Card title
+                  </h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <Link to="/CardDetails" class="btn btn-primary">
+                    Go somewhere
                   </Link>
-                  <div class="card-body">
-                    <h5
-                      class="card-title
-                            "
-                    >
-                      Card title
-                    </h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <Link href="#" class="btn btn-primary">
-                      Go somewhere
-                    </Link>
-                  </div>
                 </div>
               </div>
-
-              <div class="col-md-3 my-2">
-                <div class="card card_size">
-                  <Link to="/CardDetails">
-                    <img src={img} class="card-img-top" alt="..." />
+            </div>
+            <div class="col-md-3">
+              <div class="card mx-auto my-3" style={{ width: "18rem" }}>
+                <img src={img} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title
+                  "
+                  >
+                    Card title
+                  </h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <Link to="/CardDetails" class="btn btn-primary">
+                    Go somewhere
                   </Link>
-                  <div class="card-body">
-                    <h5
-                      class="card-title
-                            "
-                    >
-                      Card title
-                    </h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <Link href="#" class="btn btn-primary">
-                      Go somewhere
-                    </Link>
-                  </div>
                 </div>
               </div>
-              <div class="col-md-3 my-2">
-                <div class="card card_size">
-                  <Link to="/CardDetails">
-                    <img src={img} class="card-img-top" alt="..." />
+            </div>
+            <div class="col-md-3">
+              <div class="card mx-auto my-3" style={{ width: "18rem" }}>
+                <img src={img} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title
+                  "
+                  >
+                    Card title
+                  </h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <Link to="/CardDetails" class="btn btn-primary">
+                    Go somewhere
                   </Link>
-                  <div class="card-body">
-                    <h5
-                      class="card-title
-                            "
-                    >
-                      Card title
-                    </h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <Link href="#" class="btn btn-primary">
-                      Go somewhere
-                    </Link>
-                  </div>
                 </div>
               </div>
-              <div class="col-md-3 my-2">
-                <div class="card card_size">
-                  <Link to="/CardDetails">
-                    <img src={img} class="card-img-top" alt="..." />
+            </div>
+            <div class="col-md-3">
+              <div class="card mx-auto my-3" style={{ width: "18rem" }}>
+                <img src={img} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    class="card-title
+                  "
+                  >
+                    Card title
+                  </h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <Link to="/CardDetails" class="btn btn-primary">
+                    Go somewhere
                   </Link>
-                  <div class="card-body">
-                    <h5
-                      class="card-title
-                            "
-                    >
-                      Card title
-                    </h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <Link href="#" class="btn btn-primary">
-                      Go somewhere
-                    </Link>
-                  </div>
                 </div>
               </div>
             </div>

@@ -6,7 +6,6 @@ import Contact from "./components/Contact";
 import Media from "./components/Media";
 import Product from "./components/Product";
 import Blog from "./components/Blog";
-import Login from "./components/Autho/login";
 import CardDetails from "./components/CardDetails";
 import About from "./components/About";
 import ProductItems from "./components/ProductItems";
@@ -15,6 +14,8 @@ import Flakes from "./components/Flakes";
 import Muesli from "./components/Muesli";
 import Cookies from "./components/Cookies";
 import ScrollToTop from "./components/ScrollToTop";
+import Login from "./autho/Login";
+import Registation from "./autho/Registation";
 function App() {
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
           <Route path="/Media" element={<Media />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/register" element={<Registation />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/About" element={<About />} />
           <Route path="/ProductItems" element={<ProductItems />} />

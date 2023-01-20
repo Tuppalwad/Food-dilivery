@@ -9,113 +9,112 @@ import TopClassItems from "./TopClassItems";
 import CardSlider from "./Slider";
 import Footer from "./Footer";
 import Newsitem from "./Newsitem";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 export default function Home() {
-  // const [navbar, setNavbar] = useState(false);
-  // const changeBackground = () => {
-  //   if (window.scrollY >= 80) {
-  //     setNavbar(true);
-  //   } else {
-  //     setNavbar(false);
-  //   }
-  // };
-  // window.addEventListener("scroll", changeBackground);
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
 
   return (
     <>
-      {/* <nav
+      <nav
         class={
           navbar
             ? "navbar navbar-expand-lg navbar-light bg-dark  fixed-top"
             : "navbar navbar-expand-lg navbar-light  fixed-top"
         }
       >
-        <div class="container-fluid navbar_top  ">
-          <Link class="navbar-brand" href="/"></Link>{" "}
-          <div className="container nav_in_phone_mode ">
-            <div className="logo-2">
-              <Link className="logolink" to="/">
-                UNICO FOODS
-              </Link>
-            </div>
-            <div className="icons">
-              <li class="nav-item">
-                <Link class="nav-link icon_s" to="/Search">
-                  <i class="fa fa-user"></i>
-                </Link>
-              </li>
-              <li class="nav-item" style={{ marginLeft: "-10px" }}>
-                <Link class="nav-link icon_s" to="/Cart">
-                  <i class="fa fa-shopping-cart"></i>
-                </Link>
-              </li>
-
-              <li class="nav-item" style={{ marginLeft: "-15px" }}>
-                <Link class="nav-link" to="/Search">
-                  <i class="fa fa-search"></i>
-                </Link>
-              </li>
-            </div>
-            <div className="menubtn">
-              <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                class="navbar-toggler "
-                data-target="#navbarSupportedContent"
-                data-toggle="collapse"
-                type="button"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-          </div>
-          <div
-            class="collapse navbar-collapse menubar "
-            id="navbarSupportedContent"
+        <div class="container-fluid">
+          <Link class="navbar-brand" to="/" style={{ color: "white" }}>
+            UNICO FOODS
+          </Link>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <div className="logo">
-              <Link className="logolink" to="/">
-                UNICO FOODS
-              </Link>
-            </div>
-            <div className="my_navbar mx-auto">
-              <ul class="navbar-nav ml-auto ">
-                <li class="nav-item active">
-                  <Link class="nav-link nav_items" to="/">
-                    Home
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link nav_items" to="/Product">
-                    Product
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link nav_items" to="/Media">
-                    Media
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link nav_items" to="/Profile">
-                    Corporate Profile
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link nav_items" to="/Contact">
-                    Contact
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="nav-link nav_items" to="/Blog">
-                    Blog
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="icon_in_lg_mode icon_in_phone">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto text-center  fs-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <Link class="nav-link " aria-current="page" to="/">
+                  Home
+                </Link>
+              </li>
+              <li class="nav-item dropdown">
+                <Link
+                  class="nav-link "
+                  to="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Product
+                </Link>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link class="dropdown-item" to="/Millet">
+                      Millet
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/Flakes">
+                      Flakes
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/Muesli">
+                      Muesli
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/Cookies">
+                      Cookies
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/Media">
+                  Media
+                </Link>
+              </li>{" "}
+              <li class="nav-item">
+                <Link class="nav-link" to="/Contact">
+                  Contact
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/About">
+                  About
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link
+                  class="nav-link "
+                  to="/Blog"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  Blog
+                </Link>
+              </li>
+            </ul>
+            <div className=" phone_mode">
               <li class="nav-item ">
-                <Link class="nav-link" to="/Search">
+                <Link class="nav-link" to="/Login">
                   <i class="fa fa-user"></i>
                 </Link>
               </li>
@@ -133,8 +132,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </nav> */}
-      <Navbar bg={true} />
+      </nav>
       <div
         class="carousel slide"
         data-ride="carousel"
@@ -215,7 +213,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <CardSlider></CardSlider>
+      {/* <CardSlider></CardSlider> */}
       <Itemslider></Itemslider>
       <TopClassItems></TopClassItems>
       <Newsitem></Newsitem>

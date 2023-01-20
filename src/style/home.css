@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .fa {
   font-size: 20px;
@@ -51,12 +51,67 @@ a {
   font-family: poppins;
   color: #fff;
 }
+.navbar-light .navbar-nav .nav-link {
+  /* color: rgba(0,0,0,.55); */
+  color: white;
+}
+.navbar-nav {
+  margin-top: 20px;
+}
+.nav-link:hover {
+  color: white !important;
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: white;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.phone_mode {
+  display: flex;
+}
 
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.my-dropdown-toggle::after {
+  content: none;
+}
+.dropdown-item:hover {
+  color: red;
+}
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
 @media only screen and (max-width: 767px) {
   .icons li {
     list-style: none;
   }
+  .navbar-nav {
+    background-color: #262626;
+  }
   .logo {
+    display: none;
+  }
+  .phone_mode {
     display: none;
   }
   .fa {

@@ -5,9 +5,9 @@ import "../style/navbar.css";
 export default function Navbar(props) {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark  fixed-top">
         <div class="container-fluid">
-          <Link class="navbar-brand" to="/">
+          <Link class="navbar-brand" to="/" style={{ color: "white" }}>
             UNICO FOODS
           </Link>
           <button
@@ -22,15 +22,15 @@ export default function Navbar(props) {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto text-center  fs-5 mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto text-center  mb-lg-0">
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/">
+                <Link class="nav-link " aria-current="page" to="/">
                   Home
                 </Link>
               </li>
               <li class="nav-item dropdown">
                 <Link
-                  class="nav-link dropdown-toggle"
+                  class="nav-link "
                   to="#"
                   id="navbarDropdown"
                   role="button"
@@ -77,40 +77,6 @@ export default function Navbar(props) {
                   About
                 </Link>
               </li>
-              {/* <li class="nav-item dropdown">
-                <Link
-                  class="nav-link dropdown-toggle"
-                  to="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </Link>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <Link class="dropdown-item" to="#">
-                      Millet
-                    </Link>
-                  </li>
-                  <li>
-                    <Link class="dropdown-item" to="#">
-                      Flakes
-                    </Link>
-                  </li>
-                  <li>
-                    <Link class="dropdown-item" to="#">
-                      Muesli
-                    </Link>
-                  </li>
-                  <li>
-                    <Link class="dropdown-item" to="#">
-                      Cookies
-                    </Link>
-                  </li>
-                </ul>
-              </li> */}
               <li class="nav-item">
                 <Link
                   class="nav-link "
@@ -122,9 +88,9 @@ export default function Navbar(props) {
                 </Link>
               </li>
             </ul>
-            <div className="d-flex phone_mode">
+            <div className=" phone_mode">
               <li class="nav-item ">
-                <Link class="nav-link" to="/Search">
+                <Link class="nav-link" to="/Login">
                   <i class="fa fa-user"></i>
                 </Link>
               </li>
