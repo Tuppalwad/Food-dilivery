@@ -112,6 +112,7 @@
 import React from "react";
 import Bg from "../Assets/images/slide-1.jpg";
 import "../style/slider.css";
+import { Link } from "react-router-dom";
 function Slider() {
   return (
     <>
@@ -128,39 +129,57 @@ function Slider() {
             <div class="carousel-item img_hight active">
               <div className="row align_item">
                 <div className="col-lg-3 img_product">
-                  <img src={Bg} class="d-block  w-100" alt="..." />
+                  <Link to="/CardDetails">
+                    <img src={Bg} class="d-block  w-100" alt="..." />
+                  </Link>
                 </div>
                 <div className="col-lg-3 img_product">
-                  <img src={Bg} class="d-block  w-100" alt="..." />
+                  <Link to="/CardDetails">
+                    <img src={Bg} class="d-block  w-100" alt="..." />
+                  </Link>
                 </div>
                 <div className="col-lg-3 img_product">
-                  <img src={Bg} class="d-block  w-100" alt="..." />
+                  <Link to="/CardDetails">
+                    <img src={Bg} class="d-block  w-100" alt="..." />
+                  </Link>
                 </div>
               </div>
             </div>
             <div class="carousel-item img_hight">
               <div className="row align_item">
                 <div className=" col-lg-3 img_product">
-                  <img src={Bg} class="d-block  w-100" alt="..." />
+                  <Link to="/CardDetails">
+                    <img src={Bg} class="d-block  w-100" alt="..." />
+                  </Link>
                 </div>
                 <div className=" col-lg-3 img_product">
-                  <img src={Bg} class="d-block  w-100" alt="..." />
+                  <Link to="/CardDetails">
+                    <img src={Bg} class="d-block  w-100" alt="..." />
+                  </Link>
                 </div>
                 <div className=" col-lg-3 img_product">
-                  <img src={Bg} class="d-block  w-100" alt="..." />
+                  <Link to="/CardDetails">
+                    <img src={Bg} class="d-block  w-100" alt="..." />
+                  </Link>
                 </div>
               </div>
             </div>
             <div class="carousel-item img_hight">
               <div className="row align_item">
                 <div className=" col-lg-3 img_product">
-                  <img src={Bg} class="d-block  w-100" alt="..." />
+                  <Link to="/CardDetails">
+                    <img src={Bg} class="d-block  w-100" alt="..." />
+                  </Link>
                 </div>
                 <div className=" col-lg-3 img_product">
-                  <img src={Bg} class="d-block  w-100" alt="..." />
+                  <Link to="/CardDetails">
+                    <img src={Bg} class="d-block  w-100" alt="..." />
+                  </Link>
                 </div>
                 <div className=" col-lg-3 img_product">
-                  <img src={Bg} class="d-block  w-100" alt="..." />
+                  <Link to="/CardDetails">
+                    <img src={Bg} class="d-block  w-100" alt="..." />
+                  </Link>
                 </div>
               </div>
             </div>

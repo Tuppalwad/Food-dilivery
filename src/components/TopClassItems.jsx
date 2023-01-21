@@ -34,7 +34,7 @@ export default function TopClassItems() {
                     up the bulk of the card's content.
                   </p>
                   <Link to="/CardDetails" class="btn btn-primary">
-                    Go somewhere
+                    Add To Card
                   </Link>
                 </div>
               </div>
@@ -54,7 +54,7 @@ export default function TopClassItems() {
                     up the bulk of the card's content.
                   </p>
                   <Link to="/CardDetails" class="btn btn-primary">
-                    Go somewhere
+                    Add To Card
                   </Link>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function TopClassItems() {
                     up the bulk of the card's content.
                   </p>
                   <Link to="/CardDetails" class="btn btn-primary">
-                    Go somewhere
+                    Add To Card
                   </Link>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function TopClassItems() {
                     up the bulk of the card's content.
                   </p>
                   <Link to="/CardDetails" class="btn btn-primary">
-                    Go somewhere
+                    Add To Card
                   </Link>
                 </div>
               </div>

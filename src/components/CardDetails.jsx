@@ -42,7 +42,7 @@ export default function CardDetails() {
             />
           </div>
           <div className="col-6 product-details">
-            <h2>product details</h2>
+            <h2>Product details</h2>
             <p>
               <strike>MRP ₹ 330.00</strike>{" "}
               <span>
