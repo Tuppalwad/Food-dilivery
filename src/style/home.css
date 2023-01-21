@@ -43,10 +43,10 @@ a {
 }
 
 .home_title {
-  font-size: 120px;
+  font-size: 100px;
   font-weight: bold;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 50px;
   font-family: poppins;
   color: #fff;
@@ -59,7 +59,8 @@ a {
   margin-top: 20px;
 }
 .nav-link:hover {
-  color: white !important;
+  color: rgb(8, 44, 67) !important;
+  background-color: #fff;
 }
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -85,7 +86,11 @@ a {
   content: none;
 }
 .dropdown-item:hover {
-  color: red;
+  color: #fff;
+  background-color: rgb(56, 65, 122);
+}
+.nav_link:hover {
+  color: lightblue !important;
 }
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {

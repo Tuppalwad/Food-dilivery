@@ -25,7 +25,7 @@ const Footer = () => {
 
                 <hr class="w-100 clearfix d-md-none" />
 
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-5">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
                   <h6 class="text-uppercase mb-4 font-weight-bold">Link</h6>
 
                   <p>
@@ -48,11 +48,7 @@ const Footer = () => {
                       Blog
                     </Link>
                   </p>
-                  <p>
-                    <Link class="text-white" to="/Media">
-                      Media
-                    </Link>
-                  </p>
+
                   {/* <p>
                     <Link class="text-white" to="/Profile">
                       Profile
@@ -128,10 +124,14 @@ const Footer = () => {
               <div class="row d-flex align-items-center">
                 <div class="col-md-7 col-lg-8 text-center text-md-start">
                   <div class="p-3">
-                    © 2020 :
-                    <Link class="text-white" href="https://mdbootstrap.com/">
-                      MDBootstrap.com
-                    </Link>
+                    © 2023
+                    <a
+                      class="text-white"
+                      target="_blank"
+                      href="https://mdbootstrap.com/"
+                    >
+                      test@gmai.com
+                    </a>
                   </div>
                 </div>
 

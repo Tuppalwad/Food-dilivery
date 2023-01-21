@@ -22,15 +22,20 @@ export default function Navbar(props) {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto text-center  mb-lg-0">
+            <ul class="navbar-nav mx-auto text-center mt-0  mb-lg-0">
               <li class="nav-item">
-                <Link class="nav-link " aria-current="page" to="/">
+                <Link class="nav-link nav_items " aria-current="page" to="/">
                   Home
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link nav_items" to="/About">
+                  About
                 </Link>
               </li>
               <li class="nav-item dropdown">
                 <Link
-                  class="nav-link "
+                  class="nav-link nav_items "
                   to="#"
                   id="navbarDropdown"
                   role="button"
@@ -62,46 +67,65 @@ export default function Navbar(props) {
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/Media">
+              {/* <li class="nav-item">
+                <Link class="nav-link nav_items" to="/Media">
                   Media
                 </Link>
-              </li>{" "}
+              </li>{" "} */}
               <li class="nav-item">
-                <Link class="nav-link" to="/Contact">
+                <Link class="nav-link nav_items" to="/Contact">
                   Contact
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/About">
-                  About
-                </Link>
-              </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown">
                 <Link
-                  class="nav-link "
-                  to="/Blog"
-                  tabindex="-1"
-                  aria-disabled="true"
+                  class="nav-link nav_items "
+                  to="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
                   Blog
                 </Link>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link class="dropdown-item" to="/">
+                      Gallary
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/">
+                      Healty living
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/Media">
+                      Media
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/">
+                      Blog reviews
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
             <div className=" phone_mode">
               <li class="nav-item ">
-                <Link class="nav-link" to="/Login">
+                <Link class="nav-link nav_items" to="/Login">
                   <i class="fa fa-user"></i>
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/Cart">
+                <Link class="nav-link nav_items" to="/Cart">
                   <i class="fa fa-shopping-cart"></i>
                 </Link>
               </li>
 
               <li class="nav-item">
-                <Link class="nav-link" to="/Search">
+                <Link class="nav-link nav_items" to="/Search">
                   <i class="fa fa-search"></i>
                 </Link>
               </li>

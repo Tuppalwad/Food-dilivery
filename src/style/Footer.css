@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 
-.icons_fooder:hover {
-  font-size: 20px;
-  color: black;
+.btn-floating .icons_fooder:hover {
+  color: #253351;
 }
 
 .footer_email {

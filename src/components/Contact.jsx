@@ -129,12 +129,12 @@ export default function Contact() {
                 </li>
 
                 <li>
-                  <i className="fas fa-phone mt-4 fa-2x"></i>
+                  <i className="fas fa-phone  fa-2x"></i>
                   <p>+ 01 234 567 89</p>
                 </li>
 
                 <li>
-                  <i className="fas fa-envelope mt-4 fa-2x"></i>
+                  <i className="fas fa-envelope mt-2 fa-2x"></i>
                   <p>contact@mdbootstrap.com</p>
                 </li>
               </ul>
@@ -147,7 +147,7 @@ export default function Contact() {
                 class="btn-whatsapp-pulse"
                 target="_blank"
               >
-                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-whatsapp "></i>
               </a>
             </div>
           </div>

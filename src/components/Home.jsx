@@ -46,10 +46,15 @@ export default function Home() {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto text-center  fs-5 mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto text-center my-0  mb-lg-0">
               <li class="nav-item">
                 <Link class="nav-link " aria-current="page" to="/">
                   Home
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/About">
+                  About
                 </Link>
               </li>
               <li class="nav-item dropdown">
@@ -86,30 +91,49 @@ export default function Home() {
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <Link class="nav-link" to="/Media">
                   Media
                 </Link>
-              </li>{" "}
+              </li>{" "} */}
               <li class="nav-item">
                 <Link class="nav-link" to="/Contact">
                   Contact
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/About">
-                  About
-                </Link>
-              </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown">
                 <Link
                   class="nav-link "
-                  to="/Blog"
-                  tabindex="-1"
-                  aria-disabled="true"
+                  to="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
                   Blog
                 </Link>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link class="dropdown-item" to="/">
+                      Gallary
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/">
+                      Healty living
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/Media">
+                      Media
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/">
+                      Blog reviews
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
             <div className=" phone_mode">
@@ -179,7 +203,7 @@ export default function Home() {
             <div class="carousel-item active" data-bs-interval="5000">
               <img src={img3} class="d-block w-100" alt="..." />
               <div class="carousel-caption   d-md-block">
-                <h1 className="home_title">#WeLoveSnack</h1>
+                {/* <h1 className="home_title">#WeLoveSnack</h1> */}
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="5000">
@@ -191,7 +215,7 @@ export default function Home() {
             <div class="carousel-item" data-bs-interval="4000">
               <img src={img1} class="d-block w-100" alt="..." />
               <div class="carousel-caption  d-md-block">
-                <h1 className="home_title">#FormToFork</h1>
+                {/* <h1 className="home_title">#FormToFork</h1> */}
               </div>
             </div>
           </div>
