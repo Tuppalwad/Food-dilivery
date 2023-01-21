@@ -64,7 +64,7 @@ const Footer = () => {
                 <hr class="w-100 clearfix d-md-none" />
 
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
-                  <h6 class="text-uppercase mb-4 font-weight-bold">
+                  <h6 class="text-uppercase my-5  mb-4 font-weight-bold">
                     Useful links
                   </h6>
                   <p>
@@ -78,6 +78,9 @@ const Footer = () => {
                   </p>
                   <p>
                     <Link class="text-white">Help</Link>
+                  </p>
+                  <p>
+                    <Link class="text-white">Become our investres</Link>
                   </p>
                 </div>
 

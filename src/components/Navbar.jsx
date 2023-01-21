@@ -10,6 +10,24 @@ export default function Navbar(props) {
           <Link class="navbar-brand" to="/" style={{ color: "white" }}>
             UNICO FOODS
           </Link>
+          <div className=" phone_mode_iconss">
+            <li class="nav-item ">
+              <Link class="nav-link" to="/Login">
+                <i class="fa fa-user nav_itemss"></i>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/Cart">
+                <i class="fa fa-shopping-cart nav_itemss"></i>
+              </Link>
+            </li>
+
+            <li class="nav-item">
+              <Link class="nav-link" to="/Search">
+                <i class="fa fa-search nav_itemss"></i>
+              </Link>
+            </li>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -114,19 +132,19 @@ export default function Navbar(props) {
             </ul>
             <div className=" phone_mode">
               <li class="nav-item ">
-                <Link class="nav-link nav_items" to="/Login">
-                  <i class="fa fa-user"></i>
+                <Link class="nav-link " to="/Login">
+                  <i class="fa fa-user nav_itemss"></i>
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link nav_items" to="/Cart">
-                  <i class="fa fa-shopping-cart"></i>
+                <Link class="nav-link " to="/Cart">
+                  <i class="fa fa-shopping-cart nav_itemss"></i>
                 </Link>
               </li>
 
               <li class="nav-item">
-                <Link class="nav-link nav_items" to="/Search">
-                  <i class="fa fa-search"></i>
+                <Link class="nav-link " to="/Search">
+                  <i class="fa fa-search nav_itemss"></i>
                 </Link>
               </li>
             </div>

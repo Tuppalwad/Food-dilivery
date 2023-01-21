@@ -92,6 +92,10 @@ a {
 .nav_link:hover {
   color: lightblue !important;
 }
+
+.nav_itemss:hover {
+  color: #262626 !important;
+}
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: none;
@@ -105,6 +109,9 @@ a {
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
   }
+}
+.phone_mode_iconss {
+  display: none;
 }
 @media only screen and (max-width: 767px) {
   .icons li {
@@ -134,5 +141,8 @@ a {
 
   .carousel-caption {
     bottom: 400px;
+  }
+  .phone_mode_iconss {
+    display: flex;
   }
 }

@@ -1,48 +1,22 @@
-/* 
-
-.my_slider {
-  position: absolute;
-  height: 100%;
+.img_hight {
+  height: 250px !important;
 }
 
-.my_slider {
-  width: 100%;
-  height: 350px;
-  margin: auto;
-  top: 10px;
-  margin-bottom: 20px;
+.h-200 {
+  height: 200px;
+  margin-top: 10px;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
+.img_product {
+  width: 330px;
+  height: 400px;
 }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+.align_item {
+  justify-content: center !important;
 }
-
-.swiper-slide img {
-  display: block;
-  width: 400px;
-  height: 100%;
-  object-fit: cover;
+.prev .next {
+  background-color: black !important;
+  width: 30px !important;
+  height: 70px !important;
+  top: 50% !important   ;
 }
-
-@media screen {
-} */
