@@ -1,0 +1,14 @@
+.c_img {
+  width: 150px;
+  height: 140px;
+}
+
+.align_item_2 {
+  margin-top: 70px;
+}
+@media screen and (max-width: 768px) {
+  .c_img {
+    width: auto;
+    height: 100%;
+  }
+}

@@ -96,6 +96,13 @@ a {
 .nav_itemss:hover {
   color: #262626 !important;
 }
+.s-hight {
+  height: 600px;
+}
+
+.icon_navbar {
+  padding: 0.4rem 0.3rem;
+}
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: none;
@@ -109,6 +116,9 @@ a {
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
   }
+  .s-hight {
+    height: 460px;
+  }
 }
 .phone_mode_iconss {
   display: none;
@@ -119,6 +129,9 @@ a {
   }
   .navbar-nav {
     background-color: #262626;
+  }
+  .s-hight {
+    height: 340px;
   }
   .logo {
     display: none;
@@ -144,5 +157,6 @@ a {
   }
   .phone_mode_iconss {
     display: flex;
+    margin-left: -20px;
   }
 }

@@ -9,6 +9,7 @@ import TopClassItems from "./TopClassItems";
 import CardSlider from "./Slider";
 import Footer from "./Footer";
 import Newsitem from "./Newsitem";
+import Slider_of_company from "./slider_of_company";
 // import Navbar from "./Navbar";
 export default function Home() {
   const [navbar, setNavbar] = useState(false);
@@ -36,18 +37,18 @@ export default function Home() {
           </Link>
           <div className=" phone_mode_iconss">
             <li class="nav-item ">
-              <Link class="nav-link" to="/Login">
+              <Link class="nav-link icon_navbar" to="/Login">
                 <i class="fa fa-user nav_itemss"></i>
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/Cart">
+              <Link class="nav-link icon_navbar" to="/Cart">
                 <i class="fa fa-shopping-cart nav_itemss"></i>
               </Link>
             </li>
 
             <li class="nav-item">
-              <Link class="nav-link" to="/Search">
+              <Link class="nav-link icon_navbar" to="/Search">
                 <i class="fa fa-search nav_itemss"></i>
               </Link>
             </li>
@@ -109,11 +110,7 @@ export default function Home() {
                   </li>
                 </ul>
               </li>
-              {/* <li class="nav-item">
-                <Link class="nav-link" to="/Media">
-                  Media
-                </Link>
-              </li>{" "} */}
+
               <li class="nav-item">
                 <Link class="nav-link" to="/Contact">
                   Contact
@@ -156,18 +153,18 @@ export default function Home() {
             </ul>
             <div className=" phone_mode">
               <li class="nav-item ">
-                <Link class="nav-link" to="/Login">
+                <Link class="nav-link  " to="/Login">
                   <i class="fa fa-user nav_itemss"></i>
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/Cart">
+                <Link class="nav-link  " to="/Cart">
                   <i class="fa fa-shopping-cart nav_itemss"></i>
                 </Link>
               </li>
 
               <li class="nav-item">
-                <Link class="nav-link" to="/Search">
+                <Link class="nav-link  " to="/Search">
                   <i class="fa fa-search nav_itemss"></i>
                 </Link>
               </li>
@@ -259,6 +256,7 @@ export default function Home() {
       <Itemslider></Itemslider>
       <TopClassItems></TopClassItems>
       <Newsitem></Newsitem>
+      <Slider_of_company></Slider_of_company>
       <Footer />
     </>
   );

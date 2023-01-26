@@ -1,0 +1,22 @@
+.img_hight {
+  height: 250px !important;
+}
+
+.h-200 {
+  height: 200px;
+  margin-top: 10px;
+}
+
+.img_product {
+  width: 330px;
+  height: 400px;
+}
+.align_item {
+  justify-content: center !important;
+}
+.prev .next {
+  background-color: black !important;
+  width: 30px !important;
+  height: 70px !important;
+  top: 50% !important   ;
+}

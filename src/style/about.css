@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.about_bg {
+  background: url(../Assets/images/about_bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.img_about {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.millets_lab_bg {
+  background: url(../Assets/images/about_bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+.millets_heading {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 40px !important;
+}
+.my-button {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .millets_heading {
+    font-size: 30px;
+  }
+
+  .about_bg {
+    background: url(../Assets/images/about_bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  .about_bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .img_about {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .millets_lab_bg {
+    background: url(../Assets/images/about_bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  .millets_heading {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px !important;
+  }
+}

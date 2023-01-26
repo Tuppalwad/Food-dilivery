@@ -12,18 +12,18 @@ export default function Navbar(props) {
           </Link>
           <div className=" phone_mode_iconss">
             <li class="nav-item ">
-              <Link class="nav-link" to="/Login">
+              <Link class="nav-link icon_navbar" to="/Login">
                 <i class="fa fa-user nav_itemss"></i>
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/Cart">
+              <Link class="nav-link icon_navbar" to="/Cart">
                 <i class="fa fa-shopping-cart nav_itemss"></i>
               </Link>
             </li>
 
             <li class="nav-item">
-              <Link class="nav-link" to="/Search">
+              <Link class="nav-link icon_navbar" to="/Search">
                 <i class="fa fa-search nav_itemss"></i>
               </Link>
             </li>
